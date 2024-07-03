@@ -48,7 +48,7 @@ body{
 .banner{
     width: 90%;
     height: 400px;
-    background-image: linear-gradient(to right,rgb(230,52,17) ,rgba(230,52,17));
+    background-image: linear-gradient(to right,rgb(230, 17, 195) ,rgb(163, 17, 230));
     margin: 20px;
     border-radius: 20px;
     display: flex;
@@ -60,6 +60,8 @@ body{
     width: 100px;
     height: 80%;
     color: #fff;
+    
+    
 }
 
 .banner .banner-content button{
@@ -68,9 +70,10 @@ body{
     background-color: rgba(240, 154, 30, 45);
     border: none;
     border-radius: 10px;
+    margin-right: 20%;
 }
 
-
+/*   */
 .banner .banner-image{
     position: absolute;
     transform: rotate(-360deg);
@@ -79,38 +82,108 @@ body{
 
 }
 
-/* Body Category */
+.banner-1{
+  width: 90%;
+  margin: 5%;
 
-.browse-category {
-    text-align: center;
-  }
+}
+
+.banner-1 .banner-1-items{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
   
-  .category {
-    margin-bottom: 4px;
-    gap: 100px;
-  }
-  
-  .category1 img {
-    width: 200px;
-    height: 200px;
-    flex-direction: row;
+
+}
+
+.banner-1 .banner-1-items .banner-1-item{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: red;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.banner-1 .banner-1-items .banner-1-item:nth-child(1) {
+background-color: rgba(150, 1, 150, 0.534);
+}
+
+.banner-1 .banner-1-items .banner-1-item:nth-child(2) {
+  background-color: rgb(255, 252, 51);
   }
 
-  .category2 img {
-    width: 200px;
-    height: 200px;
-    flex-direction: row;
-  }
-
-  .category3 img {
-    width: 100px;
-    height: 200px;
-    flex-direction: row;
-  }
   
-  .category h4 {
-    margin-top: 10px;
-  }
+  .banner-1 .banner-1-items .banner-1-item:nth-child(3) {
+    background-color: rgb(255, 107, 243);
+    }
+    
+
+.banner-1 .banner-1-items .banner-1-item p{
+font-weight: bold;
+color: rgb(255, 255, 255);
+font-size: 21px;
+z-index: 2;
+
+}
+
+.banner-1 .banner-1-items .banner-1-item img{
+width: 50%;
+position: absolute;
+z-index: 1;
+right: 0px;
+height: 100%;
+object-fit: cover;
+}
+
+.banner-2{
+  width: 90%;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-2 .banner-2-item{
+width: 30%;
+height: 200px;
+position: relative;
+}
+
+.banner-2 .banner-2-item::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0, 0.6);
+  background-image: linear-gradient(to top, rgba(0, 0,0, 0.4), rgba(255, 244, 244, 0.4));
+  z-index: 1;
+  top: 0px;
+}
+
+.banner-2 .banner-2-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-2 .banner-2-item p{
+  position: absolute;
+  bottom: 0px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1 );
+  z-index: 2;
+  margin: 5%;
+  
+}
+
+
 
 
   .featured-products {
